@@ -5,6 +5,7 @@ const cors = require('cors')
 const DB = require('./config/DB')
 const userRoute = require('./routes/userRoute')
 const movieRoute = require('./routes/movieRoute')
+const { verifyToken } = require('./middleware/jwtVerify')
 
 const port = process.env.PORT
 
